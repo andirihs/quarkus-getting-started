@@ -7,14 +7,12 @@ import javax.ws.rs.Path;
 import java.util.List;
 
 import org.eclipse.microprofile.openapi.annotations.parameters.RequestBody;
-
 import org.eclipse.microprofile.openapi.annotations.media.Content;
 
 @Path("/hello")
 public class GreetingResource {
 
     @GET
-    // @Produces(MediaType.TEXT_PLAIN)
     public List<BlogEntity> hello() {
         return BlogEntity.listAll();
     }
