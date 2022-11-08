@@ -11,5 +11,9 @@ public class BlogEntity extends PanacheEntity {
     public BlogEntity(String name) {
         this.name = name;
     }
+
+    // Emtpy constructor reqired
+    public BlogEntity() {
+    }
   
 }
